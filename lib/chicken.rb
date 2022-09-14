@@ -13,6 +13,5 @@ class Chicken
     else
       raise NameError
     end
-    # rescue NameError
   end
 end
