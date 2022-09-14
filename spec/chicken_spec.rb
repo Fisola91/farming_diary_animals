@@ -23,10 +23,10 @@ RSpec.describe Chicken do
     end
   end
 
-
-  describe "error" do
-    it "should raise error if gender is different from male and female gender" do
-      expect { other_chicken_types.talk }.to raise_error(NameError)
+  describe "#feed!" do
+    it "it should add 1 energy" do
+      male_chicken.feed!
+      expect(male_chicken.instance_variable_get(:@energy)).to eq(1)
     end
   end
 

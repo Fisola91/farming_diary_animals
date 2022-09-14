@@ -9,7 +9,7 @@ RSpec.describe Cow do
     end
   end
 
-  describe "#feed" do
+  describe "#feed!" do
 
     it "should add 2 liters of milk" do
       cow.feed!

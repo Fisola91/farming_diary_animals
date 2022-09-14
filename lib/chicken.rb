@@ -14,4 +14,8 @@ class Chicken
       raise NameError
     end
   end
+
+  def feed!
+    @energy += 1
+  end
 end
