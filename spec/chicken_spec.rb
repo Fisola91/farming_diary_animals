@@ -31,9 +31,16 @@ RSpec.describe Chicken do
       expect(female_chicken.instance_variable_get(:@energy)).to eq(1)
     end
 
-    it "should produced 2 eggs" do
+    it "should produce 2 eggs for female chicken" do
       female_chicken.feed!
       expect(female_chicken.instance_variable_get(:@eggs)).to eq(2)
+      female_chicken.feed!
+      expect(female_chicken.instance_variable_get(:@eggs)).to eq(4)
+    end
+
+    it "should produce zero eggs for male chicken" do
+      male_chicken.feed!
+      expect(male_chicken.instance_variable_get(:@eggs)).to eq(0)
     end
   end
 
