@@ -10,5 +10,8 @@ chicken = Chicken.new
 # Implement talk method for cow animal
 puts "The cow says #{cow.talk}"
 
-# Implement talk method for male chicken
+# Implement talk method for female chicken
 puts "The female chicken says #{chicken.talk("female")}"
+
+# Implement talk method for male chicken
+puts "The male chicken says #{chicken.talk("male")}"
