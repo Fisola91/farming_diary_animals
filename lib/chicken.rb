@@ -10,6 +10,9 @@ class Chicken
       "cluck cluck"
     elsif @gender == "male"
       "cock-a-doodle-doo"
+    else
+      raise NameError
     end
+    # rescue NameError
   end
 end
