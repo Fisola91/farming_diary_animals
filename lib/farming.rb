@@ -26,3 +26,9 @@ puts "\n\n Day Two: Feed The Animals"
 # Feed the cow
 cow.feed!
 puts "The cow produced #{cow.milk} litters of milk"
+
+# Feed the chicken
+female_chicken.feed!
+puts "The female chicken produced #{female_chicken.eggs} eggs"
+male_chicken.feed!
+puts "The male chicken produced #{male_chicken.eggs} eggs"

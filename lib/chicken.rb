@@ -1,5 +1,5 @@
 class Chicken
-  attr_accessor :gender
+  attr_accessor :gender, :eggs
   def initialize(gender)
     @gender = gender
     @energy = 0
