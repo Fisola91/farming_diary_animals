@@ -2,13 +2,12 @@ require_relative "cow"
 require_relative "chicken"
 
 
-puts "\n\n Day One: Animal Talk"
 # Instantiate Cow and Animal class
 cow = Cow.new
 male_chicken = Chicken.new("male")
 female_chicken = Chicken.new("female")
 
-
+puts "\n\n Day One: Animal Talk"
 # Implement talk method for cow animal
 puts "The cow says #{cow.talk}"
 begin
@@ -20,3 +19,10 @@ begin
 rescue NameError
   puts "Error: Enter correct gender name"
 end
+
+
+puts "\n\n Day Two: Feed The Animals"
+
+# Feed the cow
+cow.feed!
+puts "The cow produced #{cow.milk} litters of milk"
