@@ -27,6 +27,8 @@ RSpec.describe Chicken do
     it "it should add 1 energy" do
       male_chicken.feed!
       expect(male_chicken.instance_variable_get(:@energy)).to eq(1)
+      female_chicken.feed!
+      expect(female_chicken.instance_variable_get(:@energy)).to eq(1)
     end
   end
 
