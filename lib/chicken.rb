@@ -1,12 +1,14 @@
 class Chicken
-  def initialize
+  attr_accessor :gender
+  def initialize(gender)
+    @gender = gender
     @energy = 0
   end
 
-  def talk(gender)
-    if gender == "female"
+  def talk
+    if @gender == "female"
       "cluck cluck"
-    else
+    elsif @gender == "male"
       "cock-a-doodle-doo"
     end
   end
