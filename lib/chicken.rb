@@ -3,6 +3,7 @@ class Chicken
   def initialize(gender)
     @gender = gender
     @energy = 0
+    @eggs = 0
   end
 
   def talk
@@ -17,5 +18,10 @@ class Chicken
 
   def feed!
     @energy += 1
+    if @gender == "female"
+      @eggs += 2
+    else
+      @eggs += 0
+    end
   end
 end
