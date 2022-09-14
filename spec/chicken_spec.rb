@@ -11,7 +11,7 @@ RSpec.describe Chicken do
         expect(female_chicken.talk).to eq("cluck cluck")
       end
 
-      it "returns cock-a-doodle-doo when female chicken talks" do
+      it "returns cock-a-doodle-doo when male chicken talks" do
         expect(male_chicken.talk).to eq("cock-a-doodle-doo")
       end
     end

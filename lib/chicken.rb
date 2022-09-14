@@ -18,10 +18,6 @@ class Chicken
 
   def feed!
     @energy += 1
-    if @gender == "female"
-      @eggs += 2
-    else
-      @eggs += 0
-    end
+    @gender == "female" ? @eggs += 2 :  @eggs += 0
   end
 end
