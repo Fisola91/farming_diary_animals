@@ -1,4 +1,5 @@
-class Cow
+
+class Cow < Animal
   attr_reader :milk
   def initialize
     @energy = 0

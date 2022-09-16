@@ -1,4 +1,4 @@
-require_relative "animal"
+
 
 class Chicken < Animal
   attr_accessor :gender, :eggs
