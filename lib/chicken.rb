@@ -1,10 +1,10 @@
-
+require_relative "animal"
 
 class Chicken < Animal
   attr_accessor :gender, :eggs
   def initialize(gender)
     @gender = gender
-    @energy = 0
+    super()
     @eggs = 0
   end
 
