@@ -19,7 +19,7 @@ class Chicken < Animal
   end
 
   def feed!
-    @energy += 1
+    super
     @gender == "female" ? @eggs += 2 :  @eggs += 0
   end
 end
