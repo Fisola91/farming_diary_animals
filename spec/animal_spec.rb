@@ -14,6 +14,8 @@ RSpec.fdescribe Animal do
 
       it "should define specific methods" do
         expect(Chicken.instance_methods(false)).to include(:talk)
+        expect(Chicken.instance_methods(false)).to include(:gender)
+        expect(Chicken.instance_methods(false)).to include(:eggs)
       end
 
       it "should duplicate the ´Chicken´ shared methods methods" do
@@ -28,7 +30,7 @@ RSpec.fdescribe Animal do
 
       it "should define specific methods" do
         expect(Cow.instance_methods(false)).to include(:talk)
-        # expect(Chicken.instance_methods(false)).to include(:milk)
+        expect(Cow.instance_methods(false)).to include(:milk)
       end
 
       it "should duplicate the ´Chicken´ shared methods methods" do
