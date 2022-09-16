@@ -22,7 +22,6 @@ end
 
 
 puts "\n\n Day Two: Feed The Animals"
-
 # Feed the cow
 cow.feed!
 puts "The cow produced #{cow.milk} litters of milk"

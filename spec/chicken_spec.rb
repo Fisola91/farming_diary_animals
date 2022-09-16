@@ -43,5 +43,4 @@ RSpec.describe Chicken do
       expect(male_chicken.instance_variable_get(:@eggs)).to eq(0)
     end
   end
-
 end
