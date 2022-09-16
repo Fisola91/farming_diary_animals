@@ -1,6 +1,6 @@
 require_relative "animal"
+
 class Cow < Animal
-  attr_reader :milk
   def initialize
     super
     @milk = 0
@@ -14,4 +14,9 @@ class Cow < Animal
     super
     @milk += 2
   end
+
+  private
+
+  attr_reader :milk
+
 end

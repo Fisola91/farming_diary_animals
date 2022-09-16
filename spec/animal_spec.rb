@@ -3,7 +3,7 @@ require "chicken"
 require "cow"
 
 
-RSpec.fdescribe Animal do
+RSpec.describe Animal do
   let(:animal) { Animal.new }
 
   describe "inheritance" do

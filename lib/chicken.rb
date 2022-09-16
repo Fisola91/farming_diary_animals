@@ -1,7 +1,6 @@
 require_relative "animal"
 
 class Chicken < Animal
-  attr_accessor :gender, :eggs
   def initialize(gender)
     @gender = gender
     super()
@@ -22,4 +21,8 @@ class Chicken < Animal
     super
     @gender == "female" ? @eggs += 2 :  @eggs += 0
   end
+
+  private
+
+  attr_accessor :gender, :eggs
 end
