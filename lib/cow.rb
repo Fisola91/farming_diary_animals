@@ -11,7 +11,7 @@ class Cow < Animal
   end
 
   def feed!
-    @energy += 1
+    super
     @milk += 2
   end
 end
